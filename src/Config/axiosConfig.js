@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "/",
+  baseURL: process.env.API_URL,
   withCredentials: true,
 });
