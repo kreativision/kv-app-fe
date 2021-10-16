@@ -1,6 +1,6 @@
 import React from "react";
 
-function Authentication() {
+function Register() {
   return (
     <div>
       <h2 className="text-danger">Login Form Will be here</h2>
@@ -8,4 +8,4 @@ function Authentication() {
   );
 }
 
-export default Authentication;
+export default Register;

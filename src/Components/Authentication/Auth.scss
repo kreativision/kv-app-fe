@@ -1,0 +1,11 @@
+.auth-layout {
+  height: 100vh;
+  background-image: url("../../resources/images/login.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  .auth-tile {
+    border-radius: 1rem;
+  }
+}

@@ -13,10 +13,10 @@ import "./CustomModal.scss";
  *
  * @param { rootClose } Function whether user can close the modal by clicking outside. Must flip the 'show state'.
  *
- * @param { headerText } String text to show on the header
  * @param { primaryLabel } String the label of the primary Action btn
  * @param { secondaryLabel } String the label of the secondary Action btn
  *
+ * @param { headerContent } String text to show on the header
  * @param { bodyContent } Node JSX template to show in the modal body
  *
  * @param { footerActions } Array Array of 2 funtions
@@ -31,9 +31,9 @@ function CustomModal({
   size = "lg",
   className = "",
   rootClose,
-  headerText = "",
   primaryLabel = "",
   secondaryLabel = "",
+  headerContent,
   bodyContent,
   footerActions = null,
 }) {
@@ -46,7 +46,7 @@ function CustomModal({
       dialogClassName={className}
     >
       <Modal.Header closeButton={showCloseBtn || !footerActions}>
-        <Modal.Title className="m-0">{headerText}</Modal.Title>
+        {headerContent}
       </Modal.Header>
       <Modal.Body>{bodyContent}</Modal.Body>
       {footerActions && (
