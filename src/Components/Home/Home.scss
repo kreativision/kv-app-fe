@@ -1,0 +1,8 @@
+.hero-layout {
+  height: 100vh;
+  &.s1 {
+    background-image: url("../../resources/images/daniel-olahh.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
