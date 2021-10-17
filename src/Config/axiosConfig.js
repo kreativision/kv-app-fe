@@ -1,6 +1,14 @@
 import axios from "axios";
 
-export default axios.create({
-  baseURL: process.env.API_URL,
-  withCredentials: true,
+const userAuthToken = localStorage["token"]
+  ? localStorage.getItem("token")
+  : null;
+
+const axiosInstance = axios.create({
+  baseURL: process.env.REACT_APP_API_URL,
+  headers: {
+    authorization: userAuthToken,
+  },
 });
+
+export { axiosInstance };
