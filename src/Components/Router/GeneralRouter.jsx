@@ -7,7 +7,6 @@ function GeneralRouter() {
     if (window.scrollY >= 250) setScrollAtTop(false);
     else setScrollAtTop(true);
   };
-
   window.addEventListener("scroll", scrollHandler);
 
   return (
@@ -20,8 +19,11 @@ function GeneralRouter() {
         }`}
       >
         <div className="container py-2 px-3">
+          <NavLink to="/" className="navbar-brand py-1 pl-0">
+            Kreativision Photoarts
+          </NavLink>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler pr-0"
             type="button"
             data-toggle="collapse"
             aria-controls="navbarSupportedContent"
@@ -32,9 +34,6 @@ function GeneralRouter() {
             <span className="navbar-toggler-bar bar2"></span>
             <span className="navbar-toggler-bar bar3"></span>
           </button>
-          <NavLink to="/" className="navbar-brand py-1">
-            Kreativision Photoarts
-          </NavLink>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
               <li className="nav-item">

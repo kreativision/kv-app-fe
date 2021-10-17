@@ -4,6 +4,7 @@ import {
   faCoffee,
   faUser,
   faLock,
+  faExclamation,
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faCheckSquare, faCoffee, faUser, faLock);
+library.add(faCheckSquare, faCoffee, faUser, faLock, faExclamation);
